@@ -34,7 +34,7 @@ retriever = docsearch.as_retriever(search_type="similarity", search_kwargs={"k":
 
 
 llm = GoogleGenerativeAI(
-    model="gemini-pro",
+    model="gemini-1.5-pro-latest",
     temperature=0.4,
     max_tokens=500,
     google_api_key=os.environ.get('GOOGLE_API_KEY')
